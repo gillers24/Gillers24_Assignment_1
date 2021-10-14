@@ -1,0 +1,138 @@
+/*normalize webpage*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/**************/
+/* media query to allow for device changes together with orientation adjustment*/
+@media screen { 
+    (only screen and (min-width:584px)),
+    (only screen and (min-width:584px) and (Orientation: landscape));
+}
+/**************/
+/* format main page container */
+#main{
+    display: flex;
+    flex-direction:column;
+    min-height: 100vh;
+    }
+/**************/
+/* format top container */
+#topcont{
+    flex:1;
+    flex-wrap:wrap;
+    width: 100%;
+    background: url("Office-background-picture.jpg");
+    background-repeat: no-repeat;
+    max-height: 400px;
+    }
+/**************/
+/* format navigate class */
+.navigate{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: flex-end;
+    margin-top: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px; 
+    text-align: right;
+    z-index: 1;
+    height:30px;
+    }
+/**************/
+/* format Logo */
+.Logo{
+    text-align: left;
+    padding: 0px 10px;
+}
+/**************/
+/* format Home */
+.Home{
+    text-align: left;
+    padding: 0px 10px;
+}
+/**************/
+/* format About */
+.About{
+    text-align: left;
+    padding: 0px 10px;
+}
+/**************/
+/* format Login */
+.Login{
+    text-align: left;
+    padding: 0px 10px;
+}
+/**************/
+/*format section */
+section{
+    padding-top: 30%;
+    padding-bottom:5px;
+}
+/**************/
+/*format content class */
+.content{
+    flex: 1 content;
+    max-height: 30%;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    background-color: rgba(26, 26, 124, 0.973);
+    position: stickybottom;
+    }
+/**************/
+/* bottom container */
+#bottomcont{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: column;
+    min-height: 225px;
+    padding: 5px;
+    background-color: whitesmoke;
+    }
+/**************/
+/* format central white content */
+.single{
+    display: flex;
+    max-height: 10%;
+    font-weight:bolder;
+    font-family: arial, verdana, sans-serif;
+    justify-content: center;
+    margin: 5px;
+    height: 50px;
+}
+/**************/
+/* format holding button boxes */
+.boxrow{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    background: url("Office-background-picture.jpg");
+    background-repeat: no-repeat;
+}
+/**************/
+/* format three boxes */
+.Box1, .Box2, .Box3{
+    flex-grow:1;
+    flex-basis: 300px;
+    background-color:darkcyan;
+    border:darkblue 5px;
+    text-align: center;
+    padding: 20px;
+    justify-content:space-between;
+}
+/**************/
+/* format footer */
+footer{ 
+    font: center bold black;
+    font-family: arial, verdana, sans-serif;
+    font-size: 12px;
+    padding-top: 40px;
+    position:sticky-bottom;
+    text-align: right;
+}
