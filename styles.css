@@ -16,17 +16,41 @@
     display: flex;
     flex-direction:column;
     min-height: 100vh;
+    width: 100vw;
     }
 /**************/
 /* format top container */
 #topcont{
     flex:1;
     flex-wrap:wrap;
-    width: 100%;
+    width:100vw;
+    max-height:350px;
     background: url("Office-background-picture.jpg");
     background-repeat: no-repeat;
-    max-height: 400px;
     }
+/**************/
+/* format navigate class */
+.navigate_logo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: flex-start;
+    margin-top: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px; 
+    text-align: left;
+    z-index: 1;
+    height:30px;
+    background-color: rgba(255, 255, 255, 0.493);
+    }
+/**************/
+/* format Home *//**************/
+/* format Logo */
+.Logo{
+    text-align: right;
+    padding: 0px 10px;
+}
 /**************/
 /* format navigate class */
 .navigate{
@@ -41,13 +65,9 @@
     text-align: right;
     z-index: 1;
     height:30px;
+    width:100vw;
+    background-color: rgba(255, 255, 255, 0.493);
     }
-/**************/
-/* format Logo */
-.Logo{
-    text-align: left;
-    padding: 0px 10px;
-}
 /**************/
 /* format Home */
 .Home{
@@ -69,9 +89,9 @@
 /**************/
 /*format section */
 section{
-    padding-top: 30%;
     padding-bottom:5px;
-}
+    max-height:fit-content;
+    }
 /**************/
 /*format content class */
 .content{
@@ -80,8 +100,11 @@ section{
     font-family:Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 12px;
-    background-color: rgba(26, 26, 124, 0.973);
+    color: whitesmoke;
+    background-color: rgb(53, 53, 116);
+    text-align: center;
     position: stickybottom;
+    padding:20px;
     }
 /**************/
 /* bottom container */
@@ -89,9 +112,10 @@ section{
     display:flex;
     flex-wrap:wrap;
     flex-direction: column;
-    min-height: 225px;
-    padding: 5px;
+    height: 418;
+    padding: 50px 0px;
     background-color: whitesmoke;
+    position:stickybottom;
     }
 /**************/
 /* format central white content */
@@ -112,19 +136,19 @@ section{
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    background: url("Office-background-picture.jpg");
     background-repeat: no-repeat;
+    padding: 10px;
 }
 /**************/
 /* format three boxes */
 .Box1, .Box2, .Box3{
     flex-grow:1;
     flex-basis: 300px;
-    background-color:darkcyan;
-    border:darkblue 5px;
-    text-align: center;
     padding: 20px;
+    background-color: grey;
+    text-align: center;
     justify-content:space-between;
+    box-shadow: 10px 10px rgb(53, 53, 116) inset;
 }
 /**************/
 /* format footer */
@@ -133,6 +157,7 @@ footer{
     font-family: arial, verdana, sans-serif;
     font-size: 12px;
     padding-top: 40px;
+    padding-right: 50px;
     position:sticky-bottom;
-    text-align: right;
+    text-align: end;
 }
